@@ -81,3 +81,8 @@ a.link-default:visited {
   text-decoration: none;
   border-bottom: 1px solid #172b4d;
 }
+
+.fixed-width {
+  width: 30%;
+  min-width: 180px;
+}
