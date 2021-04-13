@@ -31,15 +31,15 @@ blog_settings:
   # 3. Add a color of the icon - text-primary, text-success, text-info, text-danger, text-warning and text-default all work!
 menu_settings:
   menu_items:
-    - title: Docs
-      url: "https://docs.idemeum.com"
-    - title: Blog
-      url: "https://blog.idemeum.com"
-    - title: 'Contact us'
-      submenu_items:
-      - title: Send a question
-        url: "https://idemeum.com/contact"
-        icon: ni ni-spaceship text-success
-      - title: Slack channel
-        url: "https://join.slack.com/t/idemeum-community/shared_invite/zt-npfwnoud-hOjc6rbmZmdTAY3xE3i5FA"
-        icon: ni ni-chat-round text-primary
+   - title: Docs
+     url: "https://docs.idemeum.com"
+   - title: Blog
+     url: "https://blog.idemeum.com"
+   - title: 'Contact us'
+     submenu_items:
+     - title: Send a question
+       url: "https://idemeum.com/contact"
+       icon: ni ni-spaceship text-success
+     - title: Slack channel
+       url: "https://join.slack.com/t/idemeum-community/shared_invite/zt-npfwnoud-hOjc6rbmZmdTAY3xE3i5FA"
+       icon: ni ni-chat-round text-primary

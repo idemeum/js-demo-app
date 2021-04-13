@@ -15,13 +15,13 @@
   <meta name="twitter:title"
     content="idemeum passwordless demo app – idemeum">
   <meta name="twitter:description" content="idemeum passwordless and private digital identity platform">
-  <meta name="twitter:image:src" content="">
+  <meta name="twitter:image:src" content="http://localhost:4000/assets/img/flows/signed.png">
 
   <!-- Facebook OpenGraph -->
   <meta property="og:title"
     content="idemeum passwordless demo app – idemeum" />
   <meta property="og:description" content="idemeum passwordless and private digital identity platform" />
-  <meta property="og:image" content="" />
+  <meta property="og:image" content="http://localhost:4000/assets/img/flows/signed.png" />
 
   <!--  Fonts and icons -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -138,7 +138,7 @@
 		  <p class="lead text-white mt-3"><mark style="color: #FFC463; background-color: #3E79F1">Welcome to idemeum JavaScript demo application!</mark></p>
 		  <p class=" text-white mt-3">Using this demo app you can get a feel for how idemeum can enable your app to go passwordless. With a few lines of code you can enable one-click, biometric, or mobile app login. Try the flows below. </p>
 		  
-		  <a href="/one-click"><button type="button" class="btn btn-default mt-2">Try one-click login</button></a>
+		  <a href="/one-click"><button type="button" class="btn btn-default mt-2">One-click login</button></a>
 		  <a href="/biometric"><button type="button" class="btn btn-info mt-2" onclick="idemeum1.LoginPage()">Biometric login</button></a>
 		  <a href="/mobile-app"><button type="button" class="btn btn-success mt-2">Mobile app login</button></a>
 		  
@@ -153,25 +153,88 @@
 </header>
   
 
-  
-
   <div class="wrapper page">
     
 
 
     
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-03VFJJMTJ1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      
 
-  gtag('config', 'G-03VFJJMTJ1');
+      
+	
+    
+      
+<!--   Core JS Files   -->
+<script src="/assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="/assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Plugin for the Carousel, full documentation here: http://jedrzejchalubek.com/ -->
+<script src="/assets/js/plugins/glide.js" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://flatpickr.js.org/ -->
+<script src="/assets/js/plugins/moment.min.js"></script>
+<!--	Plugin for Select, full documentation here: https://joshuajohnson.co.uk/Choices/ -->
+<script src="/assets/js/plugins/choices.min.js" type="text/javascript"></script>
+<!--  Plugin for the DateTimePicker, full documentation here: https://flatpickr.js.org/ -->
+<script src="/assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+<!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="/assets/js/plugins/jasny-bootstrap.min.js"></script>
+<!-- Plugin for Headrom, full documentation here: https://wicky.nillia.ms/headroom.js/ -->
+<script src="/assets/js/plugins/headroom.min.js"></script>
+<!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+
+<script>
+  // Blog Post Carousel
+  if (document.querySelector('.blogGlide') !== null) {
+    new Glide('.blogGlide', {
+      type: 'carousel',
+      startAt: 0,
+      focusAt: 2,
+      perTouch: 1,
+      perView: 4
+    }).mount();
+  }
+
+  if (document.querySelector('.glide') !== null) {
+    // Generic
+     new Glide('.glide', {
+      type: 'carousel',
+      startAt: 0,
+      focusAt: 2,
+      perTouch: 1,
+      perView: 4
+    }).mount();
+  }
+
+  if (document.querySelector('.testimonial-glide') !== null) {
+    // Testimonial Carousel
+    new Glide('.testimonial-glide', {
+      type: 'carousel',
+      startAt: 0,
+      focusAt: 2,
+      perTouch: 1,
+      perView: 4
+    }).mount();
+  }
+
+</script>
+
+<script>
+  $(function () {
+    var navOffset = $('#navbar-main').height();
+    $('.contentWrapper').css('padding-top', navOffset * 2 + 'px');
+  });
 </script>
 
 
-      
+
+<script src="/assets/js/argon-design-system.min.js?v=1.0.0" type="text/javascript"></script>
+
+    
 
   
 

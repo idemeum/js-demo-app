@@ -56,32 +56,6 @@
     {% include home-header.html %}
   {% endif %}
 
-  {% if page.type == "blog-post" or page.type == "blog-post-wide" %}
-  <div class="page-header header-filter" style="max-height: 1500px ;">
-    <div class="page-header-image" style="background-image: url({{ page.featured_image | relative_url }});"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 mx-auto text-center pt-8">
-          <h2 class="display-2 text-white">{{ page.title }}</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="floating-box bg-default">
-          <div class="box text-center">
-            <div class="icon icon-shape bg-primary icon-xl rounded-circle text-white">
-              <i class="ni ni-book-bookmark"></i>
-            </div>
-          </div>
-          <blockquote class="blockquote text-center mt-2">
-            <p class="mb-0 text-white">Posted {{ page.date | date_to_long_string }}</p>
-          </blockquote>
-          <h2 class="lead text-white pl-5 pr-5 pb-5 text-left">{{page.description}}</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-
   <div class="wrapper page">
     {% if page.url != "/" and page.collection != "posts" and page.type != "blogListing" and page.type != "myType" and page.type != "contact" and page.type != "login-page" %}
     <!-- Is not a blog post or blog archive or contact page -->
@@ -141,6 +115,10 @@
           {{content}}
         </div>
         </div>
+    {% endif %}
+	
+    {% if page.type != "login-page" %}
+      {% include footer.html %}
     {% endif %}
 
   {% if site.data.settings.advanced_settings.footer_js %}
