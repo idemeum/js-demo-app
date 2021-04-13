@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+
+  <!-- Page Info -->
+  <link rel="shortcut icon" href="/assets/img/favicon/idemeum-favicon.png">
+  <title>You are logged in! – idemeum passwordless demo app</title>
+  <meta name="description" content="">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+    content="You are logged in! – idemeum passwordless demo app">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image:src" content="http://localhost:4000/assets/img/flows/welcome.jpg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title"
+    content="You are logged in! – idemeum passwordless demo app" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="http://localhost:4000/assets/img/flows/welcome.jpg" />
+
+  <!--  Fonts and icons -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!-- Nucleo Icons -->
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link href="/assets/css/font-awesome.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/assets/styles/styles.css" rel="stylesheet">
+
+  
+
+  
+
+</head>
+
+<body>
+  
+    
+  <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg bg-primary navbar-dark headroom">
+    
+
+        <div class="container">
+          
+          <a href="/" class="navbar-brand mr-lg-5">
+            <img src="/assets/img/logo/idemeum-logo.png">
+          </a>
+          
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar_global">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
+                  
+                  <a href="/">
+                    <img src="/assets/img/logo/idemeum-logo.png">
+                  </a>
+                  
+                </div>
+                <div class="col-6 collapse-close">
+                  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+              
+                
+                  <li class="nav-item">
+                    <a href="https://blog.idemeum.com" class="nav-link">
+                      <span class="nav-link-inner--text">Blog</span>
+                    </a>
+                  </li>
+                
+              
+                
+                  <li class="nav-item dropdown">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown" role="button">
+                      <span class="nav-link-inner--text">Contact us</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      
+                      <a class="dropdown-item" href="https://idemeum.com/contact">
+                        <i class="ni ni ni-spaceship text-success"></i>
+                        Send a question
+                      </a>
+                      
+                      <a class="dropdown-item" href="https://join.slack.com/t/idemeum-community/shared_invite/zt-npfwnoud-hOjc6rbmZmdTAY3xE3i5FA">
+                        <i class="ni ni ni-chat-round text-primary"></i>
+                        Slack channel
+                      </a>
+                      
+                    </div>
+                  </li>
+                
+              
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  
+
+  
+
+  
+
+  <div class="wrapper page">
+    
+    <!-- Is not a blog post or blog archive or contact page -->
+    
+	
+	
+	
+    <!-- Is a page with a banner -->
+    <div class="page-header header-filter page-header-small">
+      <div class="page-header-image card-background"
+        style="background-image: url(/assets/img/flows/welcome.jpg);"></div>
+      <div class="container contentWrapper">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center pt-4">
+            <h2 class="display-2 text-white">You are logged in!</h2>
+            <h2 class="lead text-white pl-5 pr-5 pb-3 text-center">Let us know what you think about the login experience. No more passwords. No more friction. No more security holes.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+
+
+    
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script src="/jwt-decode.js"></script>
+
+<!-- Definition -->
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto mx-auto justify-content-center d-flex flex-column">
+        <h6 class="text-uppercase">Login details</h6>
+        <h3 class="display-3">JWT token your app will receive</h3>
+		<p>Your application will receive a JWT token to identify the user. The example of the token is below:</p>
+     	 <pre id="jwt"></pre>
+	  </div>
+      <div class="col-lg-6 mx-auto">
+          <img src="/assets/img/flows/signed.png" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+	function urlParam(name){
+	  var results = new RegExp('[?&]' + name + '=([^&#]*)').exec(window.location.href);
+	  if (results == null){
+	     return null;
+	  }
+	  else {
+	     return decodeURI(results[1]) || 0;
+	  }
+	}
+	
+	const idToken = urlParam('idToken');
+	console.log("IdToken:"+ idToken);
+	 // just decode 'token' into {header: Object, payload: Object, signature: String}
+	 let claims = jwt_decode(idToken);
+	 document.getElementById("jwt").innerHTML = JSON.stringify(claims, undefined, 2);
+</script>
+
+<!-- Contact us for demo -->
+<div id="main" class="container mt-5">
+<div class="section bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center">
+          <h3 class=" display-3 text-neutral">Curious to learn more?</h3>
+          <p class="text-neutral">Let us know, and we will be happy to help</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center">
+        <a href="https://docs.idemeum.com" target="_blank">
+          <button type="submit" class="btn btn-success">Read docs</button>
+        </a>
+        <a href="https://join.slack.com/t/idemeum-community/shared_invite/zt-npfwnoud-hOjc6rbmZmdTAY3xE3i5FA" target="_blank">
+          <button type="submit" class="btn btn-outline-white">Contact on Slack</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+      
+
+  
+
+</body>
+
+</html>
+</body>
+
+</html>
