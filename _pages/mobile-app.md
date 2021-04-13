@@ -1,6 +1,6 @@
 ---
 title: Mobile App Passwordless Login
-subtitle: The most secure, multi-factor login flow with idemeum mobile app.<br><button type="button" class="btn btn-icon btn-3 btn-primary mt-3" onclick="idemeum.LoginPage()"><span class="btn-inner--icon"><i class="fas fa-mobile"></i></span><span class="btn-inner--text">Try mobile app login</span></button><a href="https://docs.idemeum.com/overview/loginapp/" target="_blank"><button type="button" class="btn btn-outline-white mt-3">Docs</button></a>
+subtitle: The most secure, multi-factor login flow with idemeum mobile app.<br><button type="button" class="btn btn-icon btn-3 btn-primary mt-3 fixed-width1" onclick="idemeum.LoginPage()"><span class="btn-inner--icon"><i class="fas fa-mobile"></i></span><span class="btn-inner--text">Try mobile app login</span></button><a href="https://docs.idemeum.com/overview/loginapp/" target="_blank"><button type="button" class="btn btn-outline-white mt-3">Docs</button></a>
 featured_image: /assets/img/flows/mobile-app.jpg
 type: full-view
 ---

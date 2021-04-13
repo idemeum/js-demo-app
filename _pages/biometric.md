@@ -1,6 +1,6 @@
 ---
 title: Biometric Passwordless Login
-subtitle: Frictionless login that combines the power of JWT tokens and biometrics with Webauthn. <br><button type="button" class="btn btn-icon btn-3 btn-primary mt-3" onclick="idemeum.LoginPage()"><span class="btn-inner--icon"><i class="fas fa-fingerprint"></i></span><span class="btn-inner--text">Try biometric login</span></button><a href="https://docs.idemeum.com/overview/biometric/" target="_blank"><button type="button" class="btn btn-outline-white mt-3">Docs</button></a>
+subtitle: Frictionless login that combines the power of JWT tokens and biometrics with Webauthn. <br><button type="button" class="btn btn-icon btn-3 btn-primary mt-3 fixed-width1" onclick="idemeum.LoginPage()"><span class="btn-inner--icon"><i class="fas fa-fingerprint"></i></span><span class="btn-inner--text">Try biometric login</span></button><a href="https://docs.idemeum.com/overview/biometric/" target="_blank"><button type="button" class="btn btn-outline-white mt-3">Docs</button></a>
 featured_image: /assets/img/flows/biometric.jpg
 type: full-view
 ---
