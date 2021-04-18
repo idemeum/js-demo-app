@@ -156,7 +156,7 @@
         <div class="row">
           <div class="col-lg-10 mx-auto text-center pt-4">
             <h2 class="display-2 text-white">Biometric Passwordless Login</h2>
-            <h2 class="lead text-white pl-5 pr-5 pb-3 text-center"><span id="add">Frictionless login that combines the power of JWT tokens and biometrics with Webauthn. You can use external or built-in authenticators such as fingerprint scanner.</span><br><a id="try"><button type="button" class="btn btn-icon btn-primary mt-3 fixed-width1 ml-1 mr-1" onclick="idemeum.signin()"><span class="btn-inner--icon"><i class="fas fa-fingerprint"></i></span><span class="btn-inner--text">Try biometric login</span></button></a><a id="replace"><button type="button" class="btn btn-icon btn-3 btn-warning mt-3 fixed-width1 disabled">Not supported</button></a><a href="https://docs.idemeum.com/overview/biometric/" target="_blank"><button type="button" class="btn btn-outline-white mt-3 fixed-width1 ml-1 mr-1">Learn more</button></a></h2>
+            <h2 class="lead text-white pl-5 pr-5 pb-3 text-center"><p id="add" class="lead">Frictionless login that combines the power of JWT tokens and biometrics with Webauthn. You can use external or built-in authenticators such as fingerprint scanner or a Yubikey.</p><a id="try"><button type="button" class="btn btn-icon btn-primary mt-3 fixed-width1 ml-1 mr-1" onclick="idemeum.signin()"><span class="btn-inner--icon"><i class="fas fa-fingerprint"></i></span><span class="btn-inner--text">Try biometric login</span></button></a><a id="replace"><button type="button" class="btn btn-icon btn-3 btn-warning mt-3 fixed-width1 disabled">Not supported</button></a><a href="https://docs.idemeum.com/overview/biometric/" target="_blank"><button type="button" class="btn btn-outline-white mt-3 fixed-width1 ml-1 mr-1">Learn more</button></a></h2>
           </div>
         </div>
       </div>
@@ -221,7 +221,7 @@
 		
 		var element = document.getElementById("add");
 		
-		element.insertAdjacentHTML('afterend', '<p class="mt-3 text-warning"><strong>Your browser does not support WebAuthn. Please, check the browser support matrix.</strong></p>');
+		element.insertAdjacentHTML('afterend', '<p class="mt-3 text-warning"><strong>Your browser does not support WebAuthn. Please, check the <a href="https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/" target ="_blank" class="link-red">browser support matrix</a>.</strong></p>');
 		
 
 		var firstbtn = document.getElementById("try");

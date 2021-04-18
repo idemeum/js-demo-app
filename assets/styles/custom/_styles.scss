@@ -95,3 +95,20 @@ a.link-default:visited {
 .text-yellow {
   color: #FFC463;
 }
+
+.link-red {
+  color: #fb6340;
+  text-decoration: none;
+  border-bottom: 1px solid #fb6340;
+}
+
+a.link-red:hover {
+  color: #fb6340;
+  border-bottom: 2px solid #fb6340;
+}
+
+a.link-red:visited {
+  color: #fb6340;
+  text-decoration: none;
+  border-bottom: 1px solid #fb6340;
+}
