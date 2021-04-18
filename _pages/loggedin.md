@@ -53,12 +53,12 @@ featured_image: /assets/img/flows/welcome.jpg
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6 mx-auto text-center">
+      <div class="col-md-6 mx-auto text-center mt-2">
         <a href="https://docs.idemeum.com" target="_blank">
-          <button type="submit" class="btn btn-success">Read docs</button>
+          <button type="submit" class="btn btn-success fixed-width1">Learn more</button>
         </a>
         <a href="https://join.slack.com/t/idemeum-community/shared_invite/zt-npfwnoud-hOjc6rbmZmdTAY3xE3i5FA" target="_blank">
-          <button type="submit" class="btn btn-outline-white">Contact on Slack</button>
+          <button type="submit" class="btn btn-outline-white mt-2 fixed-width1">Contact on Slack</button>
         </a>
       </div>
     </div>
