@@ -181,12 +181,15 @@
 <script>
 	var parser = new UAParser();
 	var browser = parser.getBrowser().name;
+	var os = parser.getOS().name;
+	var result = browser + '_' + os;
+	
 	console.log(browser);
-	console.log(typeof browser);
+	console.log(os);
+	console.log(result);
 	
-	var browser_list = ['Chrome', 'Safari']
-	
-	if (browser_list.includes(browser)) {
+	var browser_list = ['Chrome_Windows', 'Chrome_Android', 'Chrome_Mac OS', 'Chrome_iOS', 'Safari_Mac OS', 'Safari_iOS', 'Firefox_Windows', 'Firefox_Android', 'Edge_Windows']
+	if (browser_list.includes(result)) {
 		
 		var firstbtn = document.getElementById("try");
 		var secondbtn = document.getElementById("replace");
