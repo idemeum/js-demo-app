@@ -47,15 +47,15 @@ featured_image: /assets/img/flows/welcome.jpg
 <div class="section bg-primary">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 mx-auto text-center">
+      <div class="col-md-6 mx-auto text-center mb-0">
           <h3 class=" display-3 text-neutral">Curious to learn more?</h3>
-          <p class="text-neutral">Let us know, and we will be happy to help</p>
+          <p class="text-neutral mb-0">Let us know, and we will be happy to help</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6 mx-auto text-center mt-2">
         <a href="https://docs.idemeum.com" target="_blank">
-          <button type="submit" class="btn btn-success fixed-width1">Learn more</button>
+          <button type="submit" class="btn btn-success mt-2 fixed-width1">Learn more</button>
         </a>
         <a href="https://join.slack.com/t/idemeum-community/shared_invite/zt-npfwnoud-hOjc6rbmZmdTAY3xE3i5FA" target="_blank">
           <button type="submit" class="btn btn-outline-white mt-2 fixed-width1">Contact on Slack</button>
