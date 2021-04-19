@@ -57,7 +57,7 @@ type: full-view
 		
 		var element = document.getElementById("add");
 		
-		element.insertAdjacentHTML('afterend', '<p class="mt-3 text-warning"><strong>Your browser does not support WebAuthn. Please, check the <a href="https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/" target ="_blank" class="link-red">browser support matrix</a>.</strong></p>');
+		element.insertAdjacentHTML('afterend', '<p class="mt-3 text-warning"><strong>Your browser does not support WebAuthn. Please, check the <a href="https://docs.idemeum.com/knowledgebase/browser-support/" target ="_blank" class="link-red">browser support matrix</a>.</strong></p>');
 		
 
 		var firstbtn = document.getElementById("try");
