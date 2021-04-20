@@ -1,6 +1,6 @@
 ---
 title: One-Click Passwordless Login
-subtitle: Simplest and most frictionless type of idemeum flow to log in your users with just a click of a button. <br><a><button type="button" class="btn btn-icon btn-primary mt-3 fixed-width1 ml-1 mr-1" onclick="idemeum.signin()"><span class="btn-inner--icon"><i class="fas fa-mouse"></i></i></span><span class="btn-inner--text">Try one-click login</span></button></a><a href="https://docs.idemeum.com/overview/oneclick/" target="_blank"><button type="button" class="btn btn-outline-white mt-3 fixed-width1 ml-1 mr-1">Learn more</button></a>
+subtitle: <p class="lead">Simplest and most frictionless type of idemeum flow to log in your users with just a click of a button.</p><a><button type="button" class="btn btn-icon btn-primary mt-3 fixed-width1 ml-1 mr-1" onclick="idemeum.signin()"><span class="btn-inner--icon"><i class="fas fa-mouse"></i></i></span><span class="btn-inner--text">Try one-click login</span></button></a><a href="https://docs.idemeum.com/overview/oneclick/" target="_blank"><button type="button" class="btn btn-outline-white mt-3 fixed-width1 ml-1 mr-1">Learn more</button></a>
 featured_image: /assets/img/flows/one-click.jpg
 type: full-view
 ---
