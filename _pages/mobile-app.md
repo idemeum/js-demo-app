@@ -1,6 +1,6 @@
 ---
 title: Mobile App Passwordless Login
-subtitle: <p class="lead mb-2">The most secure, multi-factor login flow with idemeum mobile app.</p><p><a class="link-white" href="https://blog.idemeum.com/idemeum-app-beta-launch/" target="_blank">How do I get idemeum mobile app?</a></p><a><button type="button" class="btn btn-icon btn-3 btn-primary mt-3 fixed-width1 ml-1 mr-1" onclick="idemeum.login()"><span class="btn-inner--icon"><i class="fas fa-mobile"></i></span><span class="btn-inner--text">Try mobile app login</span></button></a><a href="https://docs.idemeum.com/overview/loginapp/" target="_blank"><button type="button" class="btn btn-outline-white mt-3 fixed-width1 ml-1 mr-1">Learn more</button></a>
+subtitle: <p class="lead mb-2">The most secure, multi-factor login flow with idemeum mobile app.</p><p><a class="link-white" href="https://blog.idemeum.com/idemeum-app-beta-launch/" target="_blank">How do I get idemeum mobile app?</a></p><a><button type="button" class="btn btn-icon btn-3 btn-primary mt-3 fixed-width1 ml-1 mr-1" onclick="login()"><span class="btn-inner--icon"><i class="fas fa-mobile"></i></span><span class="btn-inner--text">Try mobile app login</span></button></a><a href="https://docs.idemeum.com/overview/loginapp/" target="_blank"><button type="button" class="btn btn-outline-white mt-3 fixed-width1 ml-1 mr-1">Learn more</button></a>
 featured_image: /assets/img/flows/mobile-app.jpg
 type: full-view
 ---
@@ -10,28 +10,28 @@ type: full-view
 
 <script type="text/javascript">
     var oidc = {};
-    // Initialize Idemeum sdk with with client ID
+	
     var idemeum = new IdemeumManager(
-        {
-            clientId: 'c1d84ad4-9442-11eb-a8b3-0242ac130003',
-            onSuccess: function (signinResponse) {
-                // Fetch OIDC Token from the signin response
-                oidc = signinResponse.oidc;
-				window.open("/loggedin.html?idToken="+ oidc.idToken, "_self")
-				
-            },
-            onError: function (errorResponse) {
-                
-            }
-        });
-
-    function validateToken() {
-        // use OIDC token received in sign in response to get user approved claims
-        idemeum.getUserClaims(oidc).then(function (userClaimsResponse) {
-            //fetch user approved claims from JSON response
-        }).catch(function (errorResponse) {
-
-        });
+      // 👈 Replace clientId with the the one you get from idemeum developer portal
+      (clientId = "c1d84ad4-9442-11eb-a8b3-0242ac130003")
+    );
+	
+    function login() {
+      idemeum.login({
+        onSuccess: function (signinResponse) {
+          // Your application will receive ID and Access tokens from idemeum
+          // getUserClaims validates the oidc token and fetches the user approved claims
+          // Fetch OIDC Token from the signin response
+          oidc = signinResponse.oidc;
+	      window.open("/loggedin.html?idToken="+ oidc.idToken, "_self")
+          
+        },
+        onError: function (errorResponse) {
+          // If there is an error you can process it here
+        }
+      });
     }
-</script>
+</script>	
         
+		
+		
