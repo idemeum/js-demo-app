@@ -17,19 +17,17 @@ type: full-view
     );
 	
     function login() {
-      idemeum.login({
-        onSuccess: function (signinResponse) {
+     idemeum
+        .login()
+        .then(function (signinResponse) {
           // Your application will receive ID and Access tokens from idemeum
-          // getUserClaims validates the oidc token and fetches the user approved claims
-          // Fetch OIDC Token from the signin response
-          oidc = signinResponse.oidc;
-	      window.open("/loggedin.html?idToken="+ oidc.idToken, "_self")
-          
-        },
-        onError: function (errorResponse) {
+          // renderUserClaims() (defined below) validates the oidc token and fetches the user approved claims
+        oidc = signinResponse.oidc;
+	    window.open("/loggedin.html?idToken="+ oidc.idToken, "_self")
+        })
+        .catch(function (errorResponse) {
           // If there is an error you can process it here
-        }
-      });
+        });
     }
 </script>	
         
