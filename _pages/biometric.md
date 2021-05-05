@@ -21,7 +21,7 @@ type: full-view
 	console.log(os);
 	console.log(result);
 	
-	var browser_list = ['Chrome_Windows', 'Chrome_Android', 'Chrome_Mac OS', 'Chrome_iOS', 'Safari_Mac OS', 'Mobile Safari_iOS', 'Firefox_Windows', 'Firefox_Android', 'Edge_Windows', 'Edge_Mac OS']
+	var browser_list = ['Chrome_Windows', 'Chrome_Android', 'Chrome_Mac OS', 'Chrome_iOS', 'Safari_Mac OS', 'Mobile Safari_iOS', 'Firefox_Windows', 'Edge_Windows', 'Edge_Mac OS']
 	if (browser_list.includes(result)) {
 		
 		var firstbtn = document.getElementById("try");
